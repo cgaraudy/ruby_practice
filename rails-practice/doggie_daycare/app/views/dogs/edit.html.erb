@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-sm-8 col-sm-offset-2">
+    <h1>Editing Dog</h1>
+
+    <%= render 'form' %>
+
+    <br>
+    <%= link_to fa_icon('eye', text: 'Show Dog'), @dog, class: 'btn btn-default' %>
+    <%= link_to fa_icon('list', text: 'All Dogs'), dogs_path, class: 'btn btn-default' %>
+    <%= link_to fa_icon('trash', text: 'Delete'), @dog, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-primary' %>
+  </div>
+</div>
